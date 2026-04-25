@@ -1,0 +1,338 @@
+/*==================================================================================
+    Responsive Styles - Elite Theme
+====================================================================================*/
+
+/* ===== PAGE HERO (Inner Pages) ===== */
+.elite-page-hero {
+    position: relative;
+    padding: 200px 0 120px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.elite-page-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 13, 13, 0.8);
+    z-index: 1;
+}
+
+.elite-page-hero-title {
+    font-family: var(--font-heading) !important;
+    font-size: 62px;
+    font-weight: 500;
+    color: #fff !important;
+    margin-bottom: 15px;
+}
+
+.elite-page-hero-subtitle {
+    font-family: var(--font-accent) !important;
+    font-size: 20px !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    max-width: 550px;
+    margin: 0 auto !important;
+    line-height: 1.7 !important;
+}
+
+/* ===== CONTACT PAGE SPECIFIC ===== */
+.elite-contact-info-block {
+    margin-top: 40px;
+}
+
+.elite-contact-info-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.elite-contact-info-item:last-child {
+    border-bottom: none;
+}
+
+.elite-contact-info-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--elite-gold);
+    color: var(--elite-gold);
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.elite-contact-info-item h5 {
+    font-family: var(--font-heading) !important;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--elite-charcoal);
+    margin-bottom: 5px;
+}
+
+.elite-contact-info-item p {
+    font-size: 14px;
+    color: var(--elite-text-light) !important;
+    margin: 0 !important;
+}
+
+.elite-contact-form-wrapper {
+    padding: 60px;
+    background: var(--elite-ivory);
+}
+
+.elite-form-heading {
+    font-family: var(--font-heading) !important;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--elite-charcoal);
+    margin-bottom: 8px;
+}
+
+.elite-form-subheading {
+    font-family: var(--font-accent) !important;
+    font-size: 16px !important;
+    color: var(--elite-text-light) !important;
+    font-style: italic;
+    margin-bottom: 35px !important;
+}
+
+.elite-form-group {
+    margin-bottom: 25px;
+}
+
+.elite-form-group .form-control {
+    border-radius: 0 !important;
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    padding: 15px 0 !important;
+    font-family: var(--font-body) !important;
+    font-size: 14px !important;
+    font-weight: 300;
+    background: transparent !important;
+    transition: border-color 0.3s ease;
+    height: auto;
+}
+
+.elite-form-group .form-control:focus {
+    border-bottom-color: var(--elite-gold) !important;
+}
+
+.elite-form-group textarea.form-control {
+    min-height: 100px;
+    resize: none;
+}
+
+/* ===== LARGE SCREENS (1200px+) ===== */
+@media (min-width: 1200px) {
+    .elite-hero-title {
+        font-size: 78px;
+    }
+}
+
+/* ===== TABLET (768px - 991px) ===== */
+@media (max-width: 991px) {
+    .elite-hero-title {
+        font-size: 52px;
+    }
+
+    .elite-hero-subtitle {
+        font-size: 18px;
+    }
+
+    .elite-section {
+        padding: 100px 0;
+    }
+
+    .elite-section-title {
+        font-size: 40px;
+    }
+
+    .elite-cta-title {
+        font-size: 42px;
+    }
+
+    .elite-cta-section {
+        padding: 120px 0;
+    }
+
+    .elite-page-hero {
+        padding: 160px 0 100px;
+    }
+
+    .elite-page-hero-title {
+        font-size: 46px;
+    }
+
+    .elite-stat-number {
+        font-size: 42px;
+    }
+
+    .elite-contact-form-wrapper {
+        padding: 40px;
+        margin-top: 50px;
+    }
+}
+
+/* ===== MOBILE (max-width: 767px) ===== */
+@media (max-width: 767px) {
+    .elite-hero {
+        min-height: 100vh;
+    }
+
+    .elite-hero-content {
+        padding-top: 80px;
+    }
+
+    .elite-hero-title {
+        font-size: 38px;
+    }
+
+    .elite-hero-subtitle {
+        font-size: 17px;
+    }
+
+    .elite-hero-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .elite-btn {
+        text-align: center;
+        padding: 16px 30px;
+    }
+
+    .elite-section {
+        padding: 80px 0;
+    }
+
+    .elite-section-title {
+        font-size: 32px;
+    }
+
+    .elite-lead-text {
+        font-size: 18px !important;
+    }
+
+    .elite-cta-title {
+        font-size: 32px;
+    }
+
+    .elite-cta-section {
+        padding: 100px 0;
+    }
+
+    .elite-page-hero {
+        padding: 140px 0 80px;
+    }
+
+    .elite-page-hero-title {
+        font-size: 36px;
+    }
+
+    .elite-page-hero-subtitle {
+        font-size: 17px !important;
+    }
+
+    .elite-stat {
+        padding: 15px 0;
+    }
+
+    .elite-stat-number {
+        font-size: 36px;
+    }
+
+    .elite-project-card,
+    .elite-project-card-large {
+        height: 280px;
+        margin-bottom: 20px;
+    }
+
+    .elite-project-overlay {
+        padding: 25px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .elite-project-overlay h3 {
+        font-size: 18px;
+    }
+
+    .elite-service-card {
+        padding: 35px 25px;
+    }
+
+    .elite-value-item {
+        padding: 20px;
+    }
+
+    .elite-footer-top {
+        padding: 70px 0 50px;
+    }
+
+    .elite-footer-bottom-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .elite-footer-links {
+        columns: 1;
+    }
+
+    .elite-contact-form-wrapper {
+        padding: 30px 20px;
+        margin-top: 40px;
+    }
+
+    .elite-form-heading {
+        font-size: 24px;
+    }
+
+    .elite-testimonial-item p {
+        font-size: 18px !important;
+    }
+
+    .elite-hero-scroll {
+        display: none;
+    }
+
+    /* Nav overrides on mobile */
+    .elite-logo .logo-text {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .elite-logo .logo-subtext {
+        font-size: 9px;
+    }
+}
+
+/* ===== SMALL MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+    .elite-hero-title {
+        font-size: 32px;
+    }
+
+    .elite-section-title {
+        font-size: 28px;
+    }
+
+    .elite-page-hero-title {
+        font-size: 30px;
+    }
+
+    .elite-cta-title {
+        font-size: 28px;
+    }
+
+    .elite-stat-number {
+        font-size: 30px;
+    }
+}
